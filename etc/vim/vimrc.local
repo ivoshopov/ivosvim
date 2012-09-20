@@ -1,0 +1,6 @@
+
+syntax on
+set background=dark
+map <C-h> gT
+map <C-l> gt
+

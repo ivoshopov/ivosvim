@@ -11,6 +11,7 @@ all: $(home_files) $(etc_files)
 
 .PHONY:$(home_files)
 $(home_files):
+	mkdir -p $(dir ~/$@)
 	cp home/$@ ~/$@
 
 .PHONY:$(etc_files)

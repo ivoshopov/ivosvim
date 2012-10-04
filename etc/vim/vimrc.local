@@ -4,3 +4,8 @@ set background=dark
 map <C-h> gT
 map <C-l> gt
 
+map <F2> :noautocmd Grep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP<CR>
+map <F5> :noautocmd Grep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP **/*.c **/*.h **/*.cpp **/*.C **/*.H **/*.CPP<CR>
+map <F4> :cn<CR>
+map <F3> :cp<CR>
+

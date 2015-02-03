@@ -13,6 +13,9 @@ execute pathogen#infect()
 set shiftwidth=8
 "set tabstop=4
 
+" The following command will turn on cindent according to the filetype
+filetype plugin indent on
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","

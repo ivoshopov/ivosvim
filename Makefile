@@ -52,4 +52,4 @@ fugitive-clean:
 	rm -rf ~/.vim/bundle/vim-fugitive
 
 $(home_files_clean):
-	echo rm ~/$(@:%-clean=%)
+	rm ~/$(@:%-clean=%)

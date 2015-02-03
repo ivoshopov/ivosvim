@@ -1,6 +1,10 @@
 " pathogen is in that makes plugin installation easy
 execute pathogen#infect()
 
+" by default the Ubuntu terminal has black background while Vim is expecting
+" a white one.
+set background=dark
+
 " When yaifa.vim plugin is installed expandtab is set by it. 
 " Use spaces instead of tabs
 "set expandtab

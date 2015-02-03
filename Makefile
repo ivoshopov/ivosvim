@@ -9,6 +9,7 @@ home_files+=.vim/ftdetect/c.tpl.vim
 home_files+=.vim/ftdetect/h.tpl.vim
 home_files+=.vim/ftdetect/exp.log.vim
 home_files+=.vim/plugin/grep.vim
+home_files+=.vim/plugin/yaifa.vim
 
 home_files_diff=$(addsuffix -diff,$(home_files))
 etc_files_diff=$(addsuffix -diff,$(etc_files))

@@ -1,14 +1,16 @@
 " pathogen is in that makes plugin installation easy
 execute pathogen#infect()
 
+" When yaifa.vim plugin is installed expandtab is set by it. 
 " Use spaces instead of tabs
 "set expandtab
 
 " Be smart when using tabs ;)
 "set smarttab
 
-" 1 tab == 4 spaces
-"set shiftwidth=4
+" 1 tab == 8 spaces
+" When yaifa.vim plugin is install following shiftwidth is the default shiftwidth and tabstop
+set shiftwidth=8
 "set tabstop=4
 
 " With a map leader it's possible to do extra key combinations

@@ -50,9 +50,9 @@ map <C-h> gT
 map <C-l> gt
 
 " Go to some word and predd F3 to search for that word recursively
-map <F3> :noautocmd Grep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP **/*.c **/*.h **/*.cpp **/*.C **/*.H **/*.CPP<CR>
+map <F3> :Rgrep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP<CR>
 " Go to some word and predd F3 to search for that word in current directory
-map <F2> :noautocmd Grep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP<CR>
+map <F2> :Grep \<<C-R><C-W>\> *.c *.h *.cpp *.C *.H *.CPP<CR>
 " Go to next found word in the search
 map <F5> :cn<CR>
 " Go to previus found word in the search

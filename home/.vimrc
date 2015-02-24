@@ -1,5 +1,19 @@
-" pathogen is in that makes plugin installation easy
-execute pathogen#infect()
+set nocompatible              " be iMproved, required from Vundle
+filetype off                  " required from Vundle
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'gregsexton/gitv'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
 
 " by default the Ubuntu terminal has black background while Vim is expecting
 " a white one.

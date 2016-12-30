@@ -118,3 +118,7 @@ nmap <C-Space><C-Space>i
 			\:vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-Space><C-Space>d
 			\:vert scs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Set up autocomplete
+filetype plugin on
+set omnifunc=ccomplete#Complete

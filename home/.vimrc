@@ -122,3 +122,6 @@ nmap <C-Space><C-Space>d
 " Set up autocomplete
 filetype plugin on
 set omnifunc=ccomplete#Complete
+
+" Set up spell check in git commit massage
+autocmd Filetype gitcommit setlocal spell textwidth=72

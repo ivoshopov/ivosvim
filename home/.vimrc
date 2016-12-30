@@ -74,3 +74,6 @@ autocmd BufWinLeave * call clearmatches()
 " Set up status line
 set laststatus=2
 set statusline=%{fugitive#statusline()}%f[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%v,%l/%L\ %P
+
+" Set up vim diff to synchronized right and left vertical windows
+set diffopt=filler,vertical

@@ -62,3 +62,11 @@ map <F4> :cp<CR>
 " vim replay with "E464: Ambiguous use of user-defined command"
 " In order to fix this wi will define command E as Explorer command is define
 command! -nargs=* -bar -bang -count=0 -complete=dir	E Explore <args>
+
+" Highlight unwanted whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()

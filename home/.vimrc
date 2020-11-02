@@ -127,3 +127,5 @@ set omnifunc=ccomplete#Complete
 
 " Set up spell check in git commit massage
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+set colorcolumn=80

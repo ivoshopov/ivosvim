@@ -129,3 +129,5 @@ set omnifunc=ccomplete#Complete
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 set colorcolumn=80
+set mouse=n
+set ttymouse=xterm2

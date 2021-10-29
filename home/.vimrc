@@ -121,6 +121,33 @@ nmap <C-Space><C-Space>i
 nmap <C-Space><C-Space>d
 			\:vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
+" Boxes
+autocmd BufEnter * nmap <leader>mc !!boxes -d pound-cmt<CR>
+autocmd BufEnter * vmap <leader>mc !boxes -d pound-cmt<CR>
+autocmd BufEnter * nmap <leader>xc !!boxes -d pound-cmt -r<CR>
+autocmd BufEnter * vmap <leader>xc !boxes -d pound-cmt -r<CR>
+autocmd BufEnter *.html nmap <leader>mc !!boxes -d html-cmt<CR>
+autocmd BufEnter *.html vmap <leader>mc !boxes -d html-cmt<CR>
+autocmd BufEnter *.html nmap <leader>xc !!boxes -d html-cmt -r<CR>
+autocmd BufEnter *.html vmap <leader>xc !boxes -d html-cmt -r<CR>
+autocmd BufEnter *.[chly],*.[pc]c nmap <leader>mc !!boxes -d c-cmt<CR>
+autocmd BufEnter *.[chly],*.[pc]c vmap <leader>mc !boxes -d c-cmt<CR>
+autocmd BufEnter *.[chly],*.[pc]c nmap <leader>xc !!boxes -d c-cmt -r<CR>
+autocmd BufEnter *.[chly],*.[pc]c vmap <leader>xc !boxes -d c-cmt -r<CR>
+autocmd BufEnter *.C,*.cpp,*.java nmap <leader>mc !!boxes -d java-cmt<CR>
+autocmd BufEnter *.C,*.cpp,*.java vmap <leader>mc !boxes -d java-cmt<CR>
+autocmd BufEnter *.C,*.cpp,*.java nmap <leader>xc !!boxes -d java-cmt -r<CR>
+autocmd BufEnter *.C,*.cpp,*.java vmap <leader>xc !boxes -d java-cmt -r<CR>
+autocmd BufEnter .vimrc*,.exrc nmap <leader>mc !!boxes -d vim-cmt<CR>
+autocmd BufEnter .vimrc*,.exrc vmap <leader>mc !boxes -d vim-cmt<CR>
+autocmd BufEnter .vimrc*,.exrc nmap <leader>xc !!boxes -d vim-cmt -r<CR>
+autocmd BufEnter .vimrc*,.exrc vmap <leader>xc !boxes -d vim-cmt -r<CR>
+
+vmap <leader>mb !boxes  -p a1 -d stone<CR>
+nmap <leader>mb !!boxes -p a1 -d stone<CR>
+vmap <leader>rb !boxes  -p a1 -d stone -r<CR>
+nmap <leader>rb !!boxes -p a1 -d stone -r<CR>
+
 " Set up autocomplete
 filetype plugin on
 set omnifunc=ccomplete#Complete

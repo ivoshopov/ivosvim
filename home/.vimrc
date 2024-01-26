@@ -149,6 +149,12 @@ nmap <leader>mb !!boxes -p a1 -d stone<CR>
 vmap <leader>rb !boxes  -p a1 -d stone -r<CR>
 nmap <leader>rb !!boxes -p a1 -d stone -r<CR>
 
+
+" vim-powered terminal in split window
+" https://gist.github.com/mahemoff/8967b5de067cffc67cec174cb3a9f49d
+map <Leader>t :term ++close<cr>
+tmap <Leader>t <c-w>:term ++close<cr>
+
 " Set up autocomplete
 filetype plugin on
 set omnifunc=ccomplete#Complete

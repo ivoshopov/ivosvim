@@ -166,3 +166,6 @@ set colorcolumn=80
 set mouse=n
 set ttymouse=xterm2
 syntax on
+" Syntax highlight stop working with big files. Following line allow syntax
+" highlight for file till 10000 lines.
+syntax sync minlines=10000

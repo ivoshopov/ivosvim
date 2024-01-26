@@ -169,3 +169,6 @@ syntax on
 " Syntax highlight stop working with big files. Following line allow syntax
 " highlight for file till 10000 lines.
 syntax sync minlines=10000
+
+" When editing Markdown, vim folds everything. This is the workaround:
+set foldlevel=99

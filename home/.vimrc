@@ -172,3 +172,12 @@ syntax sync minlines=10000
 
 " When editing Markdown, vim folds everything. This is the workaround:
 set foldlevel=99
+
+" vimdiff color scheme makes text invisible. Therefore there are two color
+" schames to fix the issue. To download them:
+" curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+" curl -fLo ~/.vim/colors/github.vim --create-dirs https://raw.githubusercontent.com/endel/vim-github-colorscheme/master/colors/github.vim
+if &diff
+	"colorscheme github
+	colorscheme molokai
+endif
